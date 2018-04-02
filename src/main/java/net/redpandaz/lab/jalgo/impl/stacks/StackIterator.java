@@ -7,7 +7,7 @@ import java.util.Iterator;
 public class StackIterator<Item> implements Iterator<Item> {
     Stack<Item> itemStack;
 
-    StackIterator(Stack<Item> items) {
+    public StackIterator(Stack<Item> items) {
         itemStack = items;
     }
 

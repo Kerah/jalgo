@@ -15,6 +15,11 @@ public class LinkedNode<Item> {
         return this;
     }
 
+    public LinkedNode<Item> setNextNode(LinkedNode<Item> node) {
+        nextNode = node;
+        return this;
+    }
+
     public Item getItem() {
         return item;
     }

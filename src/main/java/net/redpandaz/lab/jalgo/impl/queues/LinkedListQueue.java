@@ -11,7 +11,7 @@ public class LinkedListQueue<Item> implements Queue<Item> {
     public void enqueue(Item item) {
         last = new LinkedNode<>(item).nextNodeFor(last);
         if (currentSize == 0) first = last;
-        currentSize ++;
+        currentSize++;
     }
 
     @Override
@@ -19,7 +19,7 @@ public class LinkedListQueue<Item> implements Queue<Item> {
         Item item = first.getItem();
         first = first.getNextNode();
         currentSize--;
-        if (isEmpty() ) last =null;
+        if (isEmpty()) last = null;
         return item;
     }
 
