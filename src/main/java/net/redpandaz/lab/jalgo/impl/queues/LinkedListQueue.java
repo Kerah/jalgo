@@ -6,6 +6,17 @@ import net.redpandaz.lab.jalgo.impl.commons.LinkedNode;
 public class LinkedListQueue<Item> implements Queue<Item> {
     private LinkedNode<Item> first, last;
     private int currentSize;
+    public LinkedListQueue() {
+
+    }
+    // practice 1.3.41
+    public LinkedListQueue(Queue<Item> from) {
+        for (int i= 0; i < from.size(); i++) {
+            Item item = from.dequeu();
+            from.enqueue(item);
+            enqueue(item);
+        }
+    }
 
     @Override
     public void enqueue(Item item) {
@@ -25,9 +36,7 @@ public class LinkedListQueue<Item> implements Queue<Item> {
 
     @Override
     public boolean isEmpty() {
-        boolean value = currentSize == 0;
-
-        return value;
+        return currentSize == 0;
     }
 
     @Override

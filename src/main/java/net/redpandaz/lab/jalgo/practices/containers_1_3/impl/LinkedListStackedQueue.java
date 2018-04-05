@@ -30,7 +30,7 @@ public class LinkedListStackedQueue<Item> implements StackedQueue<Item> {
         Item item = first.getItem();
         first = first.getNextNode();
         currentSize--;
-        if (isEmpty()) last = null;
+        if (isEmpty()) {last = null;}
         return item;
     }
 
