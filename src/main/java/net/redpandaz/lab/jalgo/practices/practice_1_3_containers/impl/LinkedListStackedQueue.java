@@ -1,8 +1,8 @@
-package net.redpandaz.lab.jalgo.practices.containers_1_3.impl;
+package net.redpandaz.lab.jalgo.practices.practice_1_3_containers.impl;
 
 import net.redpandaz.lab.jalgo.impl.commons.LinkedNode;
 import net.redpandaz.lab.jalgo.impl.stacks.StackIterator;
-import net.redpandaz.lab.jalgo.practices.containers_1_3.api.StackedQueue;
+import net.redpandaz.lab.jalgo.practices.practice_1_3_containers.api.StackedQueue;
 
 import java.util.Iterator;
 

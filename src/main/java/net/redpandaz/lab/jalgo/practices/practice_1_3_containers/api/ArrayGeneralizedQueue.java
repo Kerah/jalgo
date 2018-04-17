@@ -1,4 +1,4 @@
-package net.redpandaz.lab.jalgo.practices.containers_1_3.api;
+package net.redpandaz.lab.jalgo.practices.practice_1_3_containers.api;
 
 import net.redpandaz.lab.jalgo.api.Array;
 import net.redpandaz.lab.jalgo.impl.commons.ResizableArray;

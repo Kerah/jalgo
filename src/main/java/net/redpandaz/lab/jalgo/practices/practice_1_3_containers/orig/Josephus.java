@@ -1,4 +1,4 @@
-package net.redpandaz.lab.jalgo.practices.containers_1_3.orig;
+package net.redpandaz.lab.jalgo.practices.practice_1_3_containers.orig;
 
 import net.redpandaz.lab.jalgo.api.Queue;
 import net.redpandaz.lab.jalgo.impl.queues.LinkedListQueue;

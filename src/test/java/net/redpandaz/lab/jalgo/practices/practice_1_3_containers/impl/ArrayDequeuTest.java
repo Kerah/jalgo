@@ -1,4 +1,4 @@
-package net.redpandaz.lab.jalgo.practices.containers_1_3.impl;
+package net.redpandaz.lab.jalgo.practices.practice_1_3_containers.impl;
 
 import net.redpandaz.lab.jalgo.api.Deque;
 import net.redpandaz.lab.jalgo.trifle.TrifleStrings;
@@ -6,23 +6,23 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class TwoLinkedListDequeTest {
+class ArrayDequeuTest {
 
     @Test
     void isEmpty() {
-        Deque<String> deque = new TwoLinkedListDeque<>();
+        Deque<String> deque = new ArrayDequeu<>();
         assertTrue(deque.isEmpty());
     }
 
     @Test
     void size() {
-        Deque<String> deque = new TwoLinkedListDeque<>();
+        Deque<String> deque = new ArrayDequeu<>();
         assertEquals(0, deque.size());
     }
 
     @Test
     void pushLeft() {
-        Deque<String> deque = new TwoLinkedListDeque<>();
+        Deque<String> deque = new ArrayDequeu<>();
         deque.pushLeft(TrifleStrings.String());
         assertEquals(1, deque.size());
         assertFalse(deque.isEmpty());
@@ -30,7 +30,7 @@ class TwoLinkedListDequeTest {
 
     @Test
     void pushRight() {
-        Deque<String> deque = new TwoLinkedListDeque<>();
+        Deque<String> deque = new ArrayDequeu<>();
         deque.pushRight(TrifleStrings.String());
         assertEquals(1, deque.size());
         assertFalse(deque.isEmpty());
@@ -38,7 +38,7 @@ class TwoLinkedListDequeTest {
 
     @Test
     void popLeft() {
-        Deque<String> deque = new TwoLinkedListDeque<>();
+        Deque<String> deque = new ArrayDequeu<>();
         String firstExpected = TrifleStrings.String();
         String secondExpected = TrifleStrings.String();
 
@@ -49,13 +49,13 @@ class TwoLinkedListDequeTest {
 
         deque.pushRight(firstExpected);
         assertEquals(1, deque.size());
-        assertFalse(deque.isEmpty());
         assertEquals(firstExpected, deque.popLeft());
 
         deque.pushLeft(firstExpected);
         deque.pushLeft(secondExpected);
 
         assertEquals(secondExpected, deque.popLeft());
+        assertEquals(1, deque.size());
         assertEquals(firstExpected, deque.popLeft());
 
         deque.pushRight(firstExpected);
@@ -72,13 +72,11 @@ class TwoLinkedListDequeTest {
         deque.pushLeft(secondExpected);
         assertEquals(secondExpected, deque.popLeft());
         assertEquals(firstExpected, deque.popLeft());
-
-
     }
 
     @Test
     void popRight() {
-        Deque<String> deque = new TwoLinkedListDeque<>();
+        Deque<String> deque = new ArrayDequeu<>();
         String firstExpected = TrifleStrings.String();
         String secondExpected = TrifleStrings.String();
 
@@ -113,4 +111,5 @@ class TwoLinkedListDequeTest {
         assertEquals(firstExpected, deque.popRight());
         assertEquals(secondExpected, deque.popRight());
     }
+
 }

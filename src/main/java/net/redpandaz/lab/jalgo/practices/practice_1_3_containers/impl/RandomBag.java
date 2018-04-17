@@ -1,4 +1,4 @@
-package net.redpandaz.lab.jalgo.practices.containers_1_3.impl;
+package net.redpandaz.lab.jalgo.practices.practice_1_3_containers.impl;
 
 import net.redpandaz.lab.jalgo.api.Bag;
 import net.redpandaz.lab.jalgo.impl.bags.LinkedListBag;

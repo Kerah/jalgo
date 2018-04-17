@@ -1,4 +1,4 @@
-package net.redpandaz.lab.jalgo.practices.containers_1_3.orig;
+package net.redpandaz.lab.jalgo.practices.practice_1_3_containers.orig;
 
 import org.junit.jupiter.api.Test;
 
