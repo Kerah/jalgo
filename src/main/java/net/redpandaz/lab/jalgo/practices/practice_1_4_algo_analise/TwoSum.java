@@ -1,4 +1,4 @@
-package net.redpandaz.lab.jalgo.practices.pracice_1_4_algo_analise;
+package net.redpandaz.lab.jalgo.practices.practice_1_4_algo_analise;
 
 import net.redpandaz.lab.jalgo.alg.search.BinarySearcher;
 import net.redpandaz.lab.jalgo.api.Array;
@@ -6,7 +6,6 @@ import net.redpandaz.lab.jalgo.api.Searcher;
 import net.redpandaz.lab.jalgo.impl.commons.ResizableArray;
 
 import java.util.Arrays;
-import java.util.Collections;
 
 public class TwoSum {
     public static int withBruteForce(int[] a) {

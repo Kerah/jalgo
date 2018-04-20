@@ -1,4 +1,4 @@
-package net.redpandaz.lab.jalgo.practices.pracice_1_4_algo_analise;
+package net.redpandaz.lab.jalgo.practices.practice_1_4_algo_analise;
 
 import org.junit.jupiter.api.Test;
 
