@@ -1,4 +1,4 @@
-package net.redpandaz.lab.jalgo.alg.uf;
+package net.redpandaz.lab.jalgo.impl.uf;
 
 import org.junit.jupiter.api.Test;
 

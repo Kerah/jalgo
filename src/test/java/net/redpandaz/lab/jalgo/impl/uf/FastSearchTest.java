@@ -1,6 +1,5 @@
-package net.redpandaz.lab.jalgo.alg.uf;
+package net.redpandaz.lab.jalgo.impl.uf;
 
-import org.junit.Before;
 import org.junit.jupiter.api.Test;
 
 class FastSearchTest extends UnionFindTest {

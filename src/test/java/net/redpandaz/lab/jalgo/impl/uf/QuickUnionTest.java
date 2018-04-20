@@ -1,8 +1,6 @@
-package net.redpandaz.lab.jalgo.alg.uf;
+package net.redpandaz.lab.jalgo.impl.uf;
 
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class QuickUnionTest {
     @Test

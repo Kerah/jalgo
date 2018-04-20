@@ -1,4 +1,4 @@
-package net.redpandaz.lab.jalgo.alg.uf;
+package net.redpandaz.lab.jalgo.impl.uf;
 
 import net.redpandaz.lab.jalgo.api.UnionFind;
 

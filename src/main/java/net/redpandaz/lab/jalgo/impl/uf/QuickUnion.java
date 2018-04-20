@@ -1,13 +1,9 @@
-package net.redpandaz.lab.jalgo.alg.uf;
+package net.redpandaz.lab.jalgo.impl.uf;
 
 import net.redpandaz.lab.jalgo.api.UnionFind;
 
 public class QuickUnion implements UnionFind {
-    private Field field;
-
-    QuickUnion(Field field){
-        this.field = field;
-    }
+    protected Field field;
 
     public QuickUnion(int length) {
         field = new Field(length);

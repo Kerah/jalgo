@@ -1,4 +1,4 @@
-package net.redpandaz.lab.jalgo.alg.uf;
+package net.redpandaz.lab.jalgo.impl.uf;
 
 public class Field {
     private int[] id;

@@ -1,15 +1,12 @@
-package net.redpandaz.lab.jalgo.alg.uf;
+package net.redpandaz.lab.jalgo.impl.uf;
 
 import net.redpandaz.lab.jalgo.api.UnionFind;
 
-public class WeightedQuickUnion implements UnionFind {
-    private Field field;
+public class WeightedQuickUnion extends QuickUnion {
     private Sizer sizer;
-    private int total;
 
     public WeightedQuickUnion(int total) {
-        this.total = total;
-        field = new Field(total);
+        super(total);
         sizer = new Sizer(total);
     }
 
@@ -27,17 +24,6 @@ public class WeightedQuickUnion implements UnionFind {
             sizer.set(j, sizer.get(i));
         }
         field.modCount(1);
-    }
-
-    @Override
-    public int find(int p) {
-        while (p != field.getId(p)) p = field.getId(p);
-        return p;
-    }
-
-    @Override
-    public int count() {
-        return field.getCount();
     }
 
     class Sizer {
