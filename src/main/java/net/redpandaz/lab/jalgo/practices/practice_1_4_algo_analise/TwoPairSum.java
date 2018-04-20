@@ -1,10 +1,12 @@
 package net.redpandaz.lab.jalgo.practices.practice_1_4_algo_analise;
 
 import net.redpandaz.lab.jalgo.impl.commons.Pair;
+import org.jetbrains.annotations.Nullable;
 
 import java.util.Arrays;
 
 public class TwoPairSum {
+    @Nullable
     public static Pair<Integer> byValue(int[] items, int expected) {
         Arrays.sort(items);
         int j = items.length - 1;
