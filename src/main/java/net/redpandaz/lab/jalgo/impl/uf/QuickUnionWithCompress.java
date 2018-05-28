@@ -8,8 +8,12 @@ public class QuickUnionWithCompress extends QuickUnion {
     @Override
     public int find(int p) {
         int root = p;
-        while (root != field.getId(root)) root = field.getId(root);
+        while (root != field.getId(root)) {
+            tracker.incCompares().incIterates();
+            root = field.getId(root);
+        }
         while (p != root) {
+            tracker.incIterates().incCompares();
             int n = field.getId(p);
             field.setID(p, root);
             p = n;

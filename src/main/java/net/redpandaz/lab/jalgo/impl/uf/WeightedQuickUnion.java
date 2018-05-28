@@ -14,8 +14,9 @@ public class WeightedQuickUnion extends QuickUnion {
     public void union(int p, int q) {
         int i = find(p);
         int j = find(q);
+        tracker.incCompares();
         if (i == j) return;
-
+        tracker.incCompares().incMoves();
         if (sizer.get(i) < sizer.get(j)) {
             field.setID(i, j);
             sizer.set(i, sizer.get(j));
